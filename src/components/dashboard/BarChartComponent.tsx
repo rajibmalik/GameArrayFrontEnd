@@ -81,12 +81,12 @@ const BarChartComponent = ({ userGames }: Props) => {
       borderRadius="md"
       boxShadow="md"
       width={"100%"}
-      height={"100%"}
+      maxHeight={"800"}
     >
       <Heading size={"md"} color={"black"}>
         These are your most played games
       </Heading>
-      <ResponsiveContainer width={"100%"} maxHeight={600}>
+      <ResponsiveContainer width={"100%"} height={"100%"}>
         <BarChart
           width={500}
           height={300}
