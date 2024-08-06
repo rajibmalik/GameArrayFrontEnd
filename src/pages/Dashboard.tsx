@@ -38,7 +38,7 @@ const Dashboard = () => {
       "barchart barchart"
       "footer footer"
     `}
-      gridTemplateRows={"auto 1.0fr 1.0fr 3.0fr 0.5fr"}
+      gridTemplateRows={"auto 1.0fr 1.0fr 2.5.0fr 0.5fr"}
       gridTemplateColumns={"1.25fr 2.5fr"}
       maxHeight="100vh"
       maxWidth="100vw"
