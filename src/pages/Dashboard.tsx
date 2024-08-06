@@ -38,7 +38,7 @@ const Dashboard = () => {
       "barchart barchart"
       "footer footer"
     `}
-      gridTemplateRows={"auto 1.0fr 1.0fr 1.0fr 0.5fr"}
+      gridTemplateRows={"auto 1.0fr 1.0fr 700px 0.5fr"}
       gridTemplateColumns={"1.25fr 2.5fr"}
       maxHeight="100vh"
       maxWidth="100vw"
@@ -86,6 +86,10 @@ const Dashboard = () => {
         {topGenres && <RadarChartComponent topGenres={topGenres} />}
       </GridItem>
       <GridItem margin={10} marginTop={5} area="barchart">
+        {topGamesLoading && <Text>Loading Top Games</Text>}
+        {topGamesError && (
+          <Text>Error loading Top Games: {totalPlaytimeError}</Text>
+        )}
         {topGames && <BarChartComponent userGames={topGames} />}
       </GridItem>
 

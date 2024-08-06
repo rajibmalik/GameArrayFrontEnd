@@ -81,7 +81,7 @@ const BarChartComponent = ({ userGames }: Props) => {
       borderRadius="md"
       boxShadow="md"
       width={"100%"}
-      maxHeight={"800"}
+      height="600px"
     >
       <Heading size={"md"} color={"black"}>
         These are your most played games
