@@ -86,7 +86,7 @@ const Dashboard = () => {
         {topGenres && <RadarChartComponent topGenres={topGenres} />}
       </GridItem>
       <GridItem margin={10} marginTop={5} area="barchart">
-        {topGamesLoading && <Text>Loading Top Games</Text>}
+        {/* {topGamesLoading && <Text>Loading Top Games</Text>} */}
         {topGamesError && (
           <Text>Error loading Top Games: {totalPlaytimeError}</Text>
         )}
