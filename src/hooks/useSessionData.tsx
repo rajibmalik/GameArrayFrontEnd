@@ -26,6 +26,7 @@ const useSessionData = () => {
       )
       .then((res) => {
         // Sets userData to user session object, created in Passport.js in Express backend
+        console.log("RESPONSE DATA FROM SESSION:" + res.data);
         setUserData(res.data.user);
         setIsLoading(false);
       })
